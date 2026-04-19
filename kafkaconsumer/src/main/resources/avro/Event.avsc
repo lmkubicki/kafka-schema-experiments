@@ -1,0 +1,37 @@
+{
+  "type": "record",
+  "name": "EventEnvelope",
+  "version": 2,
+  "namespace": "pl.trzeciawnocy.events",
+  "fields": [
+    {
+      "name": "event",
+      "type": [
+        {
+          "type": "record",
+          "name": "UserCreated",
+          "fields": [
+            { "name": "userId", "type": "string" },
+            { "name": "email", "type": "string" }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "OrderCreated",
+          "fields": [
+            { "name": "orderId", "type": "string" },
+            { "name": "amount", "type": "double" }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "OrderSent",
+          "fields": [
+            { "name": "orderId", "type": "string" },
+            { "name": "amount", "type": "double" }
+          ]
+        }
+      ]
+    }
+  ]
+}
