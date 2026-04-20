@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/events")
-public class UserEventController {
+public class SomeEventController {
 
     private final SomeEventProducer producer;
 
-    public UserEventController(SomeEventProducer producer) {
+    public SomeEventController(SomeEventProducer producer) {
         this.producer = producer;
     }
 

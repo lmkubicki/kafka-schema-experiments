@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "EventEnvelope",
-  "version": 2,
+  "version": 1,
   "namespace": "pl.trzeciawnocy.events",
   "fields": [
     {
